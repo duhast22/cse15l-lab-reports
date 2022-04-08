@@ -3,6 +3,8 @@
 ![This is a link to my favorite dog breed.](https://www.akc.org/wp-content/uploads/2017/11/German-Wirehaired-Pointer-standing-in-a-green-grassy-field.jpg)
 *I also **hate** HTML and markdown.*
 
+New text is seen here. I am learning how to use Github.
+
 [DuHast](https://youtu.be/W3q8Od5qJio)
 1. One
 2. Two
