@@ -1,27 +1,32 @@
 # Lab Report Week 6 - Sophia Yermolenko
-## Topic: Streamlining ssh Configuration, Setup Github Access from ieng6, Copy whole directories with scp -r
+## Topic: Streamlining ssh Configuration, Setup Github Access from ieng6, Copy whole directories with `scp -r`
 
 ---
-### 1. [The first failure-inducing file.](test-file1.md)
+### 1. Streamlining ssh Configuration
 
----
+I added an extra file into the .ssh folder which already contained id_rsa and known_hosts. I called this file config and added the following into it.
 
 ```
-# Title
-
-[link1](https://something.com)
-[link2](some-thing.html)
-
+Host ieng6
+    HostName ieng6.ucsd.edu
+    User cs15lsp22ads
 ```
+Then I used the `ssh ieng6` command and was able to use the key to log me in with the username `ieng6` which I specified using my public key.
 
-The following screenshot illustrates the symptom of the failure-inducing input.
+The screenshot below shows the .ssh/config file edited with VSCode.
 
-![Show the symptom of that failure-inducing input by showing the output of running the file at the command line for the version where it was failing.](failure1new.png)
+![My .ssh/config file, and how I edited it (with VScode)](3.1.0.png)
 
-The bug results because the program initially fails to account for an edge case of a nonexistent file. The symptom of this bug was the java.nio.file.NoSuchFileException exception being thrown. 
+The next screenshot shows the ssh command that logged me in using the username I chose.
+
+![The ssh command logging me into my account using just the alias I chose](3.1.1.png)
+
+The last screenshot shows the scp command `scp WhereAmI.java ieng6:~/` which copies a file to my account.
+
+![Scp command copying a file to my account using just the alias I chose](3.1.2.png)
 
 ---
-### 2. [The second failure-inducing file.](test-file2.md)
+### 2. Setup Github Access from ieng6
 ---
 
 ```
@@ -39,7 +44,7 @@ The following screenshot illustrates the symptom of the second failure-inducing 
 The bug results because the program incorrectly adds a link of an image to the list of links. The prompt stated, *"Write a program that takes a markdown file as a command line argument and then prints out all of the URLs of the links (but not of images) in that file."* The symptom of this bug was the faulty program behavior producing the wrong answer output in the JUnit test (displayed in the screenshot). 
 
 ---
-### 3. [The third failure-inducing file.](test-file3.md)
+### 3. Copy whole directories with `scp -r`
 ---
 
 ```
