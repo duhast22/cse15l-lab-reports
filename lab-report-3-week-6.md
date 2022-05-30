@@ -1,4 +1,4 @@
-# Lab Report Week 6 - Sophia Yermolenko
+# Lab Report 3 Week 6 - Sophia Yermolenko
 ## Topic: Streamlining ssh Configuration, Setup Github Access from ieng6, Copy whole directories with `scp -r`
 
 ---
@@ -35,9 +35,13 @@ The following screenshot shows the public key I made which is stored on Github a
 
 The private key is stored on my local machine in the directory `C:\Users\yerma\.ssh`
 
+This screenshot shows where the private key is stored on my machine.
+
+![Show where the private key you made is stored on your user account (but not its contents) as a screenshot.](privateKeyLocation.png)
+
 This screenshot illustates running git commands to commit and push a change to Github while logged into my ieng6 account.
 
-![Show where the public key you made is stored on Github and in your user account (screenshot).](runninggitcommands.png)
+![Show running git commands to commit and push a change to Github while logged into your ieng6 account.](runninggitcommands.png)
 
 
 [Here is the link for the resulting commit.](https://github.com/duhast22/ieng6/commit/7ac926e2cf78c57266bc5ae6e692006f3b105916)
