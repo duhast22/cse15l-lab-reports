@@ -16,13 +16,13 @@ This is shown on line 269 in my group's implementation and line 270 for the impl
 
 The correct output should look like this: `[ti\*tle]` since the format in markdown is the following: `[foo](/bar\* "ti\*tle")`. 
 
-![image](lb5.jpg)
+![image](part1.png)
 
 ### **3. For the implementation that's not correct (or choose one if both are incorrect), describe the bug (the problem in the code) in about 2-3 sentences. You don't have to provide a fix, but you should be specific about what is wrong with the program, and show the code that should be fixed (Provide a screenshot of code and highlight where the change needs to be made).**
 
 The screenshot of the code is provided at the bottom of this question. The issue with this code is that does not account for backslashes, and because of this, the entire line `[foo](/bar\* "ti\*tle")` gets ignored completely. When the parser does not find the next link, it returns an empty arraylist as seen by the outputs in the earlier screenshots. However, there was a link that should have been found by the parser and added to the arraylist.
 
-![image](lb51.jpg)
+![image](part1.1.png)
 
 ---
 
@@ -39,6 +39,8 @@ The implementation from the repository gave a link as the output, but the conten
 The incorrect output was: `[url]`
 The correct output should look like this: `[title (with parens)]`
 
+![image](part2.png)
+
 ### **3. For the implementation that's not correct (or choose one if both are incorrect), describe the bug (the problem in the code) in about 2-3 sentences. You don't have to provide a fix, but you should be specific about what is wrong with the program, and show the code that should be fixed (Provide a screenshot of code and highlight where the change needs to be made).**
 
 The original Markdown file contains the following code:
@@ -50,7 +52,7 @@ The original Markdown file contains the following code:
 
 As seen in the screenshot below, our group's parser only looks at the first closed parenthesis. This means that it might not know that the link is actually located in the following closed parenthesis, not necessarily after the first closed ones.
 
-![image](lab52.jpg)
+![image](part2.1.png)
 
 ---
 Thank you for reading!
